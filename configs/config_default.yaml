@@ -1,0 +1,26 @@
+project_name: "Анализ кадрового потенциала РФ"
+author: "Ваше Имя"
+
+# Запросы для поиска
+search_queries:
+  - name: "IT-специалисты"
+    keywords: ["разработчик", "программист", "аналитик", "Data Scientist"]
+
+# Регионы для анализа
+regions:
+  - { "id": 1, "name": "Москва" }
+  - { "id": 2, "name": "Санкт-Петербург" }
+  - { "id": 76, "name": "Новосибирск" }
+
+# Период сбора (дней)
+period_days: 30
+
+# Настройки API
+api:
+  base_url: "https://api.hh.ru/"
+  user_agent: "ВашеПриложение/1.0 (ваш.email@example.com)"
+
+# OAuth данные
+oauth:
+  client_id: "CLIENT_ID"
+  client_secret: "CLIENT_SECRET"

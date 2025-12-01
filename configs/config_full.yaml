@@ -1,0 +1,61 @@
+analysis:
+  forecast_days: 30
+  min_vacancies_for_analysis: 100
+  salary_outlier_threshold: 3.0
+api:
+  base_url: https://api.hh.ru/
+  delays:
+    after_403: 2.0
+    between_requests: 0.5
+  only_with_salary: true
+  timeout: 30
+  user_agent: DiplomaResearch/1.0 (julsillyuk@gmail.com)
+author: Юлия Иллюк
+email: julsillyuk@gmail.com
+oauth:
+  client_id: QD4OKONPO2O76BGA9PDU2L88T4L7QPVJN8KS97P7E76HO9D4D0LDPLJO8KUOHM3G
+  client_secret: QVN13AEOPACUJCP1GM4CO9S0DTK352NAVT0G7DEPANPBN947JEKC8AUPIDNFR073
+  redirect_uri: https://diplom/
+  token_url: https://hh.ru/oauth/token
+period:
+  days_to_collect: 30
+  max_vacancies_per_query: 500
+project_name: "Дипломный проект: Анализ кадрового потенциала РФ"
+regions:
+  - id: 1
+    name: Москва
+  - id: 2
+    name: Санкт-Петербург
+  - id: 76
+    name: Новосибирск
+  - id: 66
+    name: Екатеринбург
+  - id: 88
+    name: Краснодар
+  - id: 54
+    name: Казань
+  - id: 104
+    name: Нижний Новгород
+  - id: 99
+    name: Воронеж
+search_queries:
+  - keywords:
+      - разработчик
+      - программист
+      - аналитик
+      - Data Scientist
+      - ML engineer
+      - Python
+      - Java
+      - JavaScript
+      - C++
+      - DevOps
+      - системный администратор
+      - тестировщик
+    name: IT-специалисты
+  - keywords:
+      - аналитик данных
+      - бизнес-аналитик
+      - системный аналитик
+      - financial analyst
+    name: Аналитики

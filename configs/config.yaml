@@ -1,0 +1,35 @@
+# config_test.yaml
+project_name: "Тестовая конфигурация для дипломного проекта"
+author: "JulSillyuk"
+email: "julsillyuk@gmail.com"
+
+search_queries:
+  - name: "Data Scientist"
+    keywords: ["Data Scientist", "аналитик данных", "ML engineer"]
+
+regions:
+  - { "id": 1, "name": "Москва" }
+  - { "id": 2, "name": "Санкт-Петербург" }
+
+period:
+  days_to_collect: 2
+  max_vacancies_per_query: 50
+
+api:
+  base_url: "https://api.hh.ru/"
+  user_agent: "DiplomaResearch/1.0 (julsillyuk@gmail.com)"
+  timeout: 30
+  delays:
+    between_requests: 0.5
+    after_403: 2.0
+
+oauth:
+  client_id: "QD4OKONPO2O76BGA9PDU2L88T4L7QPVJN8KS97P7E76HO9D4D0LDPLJO8KUOHM3G"
+  client_secret: "QVN13AEOPACUJCP1GM4CO9S0DTK352NAVT0G7DEPANPBN947JEKC8AUPIDNFR073"
+  redirect_uri: "https://diplom/"
+  token_url: "https://hh.ru/oauth/token"
+
+analysis:
+  min_vacancies_for_analysis: 10
+  forecast_days: 7
+  salary_outlier_threshold: 3.0

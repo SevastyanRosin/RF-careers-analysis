@@ -1,0 +1,46 @@
+# config_test.yaml
+project_name: "Тестовая конфигурация"
+author: "JulSillyuk"
+email: "julsillyuk@gmail.com"
+
+# Поисковые запросы
+search_queries:
+  - name: "IT-специалисты"
+    keywords:
+      ["разработчик", "программист", "аналитик", "data", "ML", "Python", "Java"]
+
+# Регионы
+regions:
+  - { "id": 1, "name": "Москва" }
+  - { "id": 2, "name": "Санкт-Петербург" }
+  - { "id": 76, "name": "Новосибирск" }
+  - { "id": 66, "name": "Екатеринбург" }
+  - { "id": 88, "name": "Краснодар" }
+
+# Период
+period:
+  days_to_collect: 14
+  max_vacancies_per_query: 200
+
+# Настройки API
+api:
+  base_url: "https://api.hh.ru/"
+  user_agent: "DiplomaResearch/1.0 (julsillyuk@gmail.com)"
+  timeout: 30
+  delays:
+    between_requests: 0.3
+    after_403: 1.0
+  only_with_salary: true # Только вакансии с зарплатой!
+
+# OAuth авторизация
+oauth:
+  client_id: "QD4OKONPO2O76BGA9PDU2L88T4L7QPVJN8KS97P7E76HO9D4D0LDPLJO8KUOHM3G"
+  client_secret: "QVN13AEOPACUJCP1GM4CO9S0DTK352NAVT0G7DEPANPBN947JEKC8AUPIDNFR073"
+  redirect_uri: "https://diplom/"
+  token_url: "https://hh.ru/oauth/token"
+
+# Настройки анализа
+analysis:
+  min_vacancies_for_analysis: 50
+  forecast_days: 30
+  salary_outlier_threshold: 3.0
