@@ -7,6 +7,9 @@ git clone
 ### 2. Установи зависимости
 pip install -r requirements/requirements.txt
 
+### 3. Запусти систему
+python run.py
+
 ## Основные команды
 ### Полный анализ (30 дней, все регионы)
 python src/run_analysis.py --full
